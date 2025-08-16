@@ -18,7 +18,5 @@ Projeto de estudo: sorteio de nomes de forma prática.
 ## 🚀 Como Executar o Projeto
 1. Clone este repositório:
 git clone https://github.com/emillycav/draw-names.git
-
 2.Abra o arquivo index.html no navegador.
-
-Digite os nomes, clique em Sortear e pronto! 🎉
+3.Digite os nomes, sorteie e pronto! 🎉
