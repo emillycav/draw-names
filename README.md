@@ -5,7 +5,6 @@ Projeto de estudo: sorteio de nomes de forma prática.
 ## ✨ Funcionalidades
 ✔️ Inserir uma lista de nomes  
 ✔️ Sortear nomes de forma aleatória  
-✔️ Responsivo 
 
 ---
 ## 🛠️ Tecnologias Utilizadas
