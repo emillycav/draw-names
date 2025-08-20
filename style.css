@@ -1,0 +1,144 @@
+:root {
+  --color-primary: #4B69FD;
+  --color-secondary: #FFF9EB;
+  --color-button: #fe652b;
+  --color-button-hover: #e55720;
+  --color-text: #222;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, var(--color-primary) 0%, #1e1e2f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+}
+
+.game-container {
+  background: var(--color-secondary);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  width: 90%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.game-header {
+  background: var(--color-primary);
+  padding: 20px;
+  text-align: center;
+}
+
+.game-title {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  color: var(--color-white);
+}
+
+.input-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.input-name {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid var(--color-primary);
+  outline: none;
+}
+
+.button-add {
+  padding: 10px 15px;
+  border: none;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: bold;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-add:hover {
+  background: #3c55cc;
+}
+
+.name-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.name-list li {
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 8px 0;
+  font-weight: bold;
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.name-list li:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+
+.button-container {
+  margin: 20px 0;
+}
+
+.button-draw {
+  background: var(--color-button);
+  color: var(--color-white);
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #c94e1b;
+  transition: transform 0.1s ease, background 0.3s;
+}
+
+.button-draw:hover {
+  background: var(--color-button-hover);
+}
+
+.button-draw:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #c94e1b;
+}
+
+.result-list {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+

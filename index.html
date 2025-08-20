@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigo Secreto - Joguinho</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="game-container">
+    <header class="game-header">
+      <h1 class="game-title">🎮 Amigo Secreto 🎲</h1>
+    </header>
+
+    <section class="input-section">
+      <h2 class="section-title">Digite o nome dos seus amigos</h2>
+      <div class="input-wrapper">
+        <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+        <button class="button-add" onclick="adicionarAmigo()">➕ Adicionar</button>
+      </div>
+
+      <ul id="listaAmigos" class="name-list"></ul>
+
+      <canvas id="roleta" width="500" height="500" style="display: none;"></canvas>
+
+      <div class="button-container">
+        <button class="button-draw" onclick="sortearAmigo()">🎰 Sortear Amigo</button>
+      </div>
+
+      <ul id="resultado" class="result-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
